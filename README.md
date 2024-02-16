@@ -8,7 +8,8 @@ export ANDROID_HOME=~/Library/Android/sdk/
 export ANDROID_SDK=~/Library/Android/sdk/
 ```
 3. Develop/debug `yarn android`
-4. Build `cd android`, ` ./gradlew assembleDebug` or `./gradlew assembleRelease`
+4. Build `cd android; ./gradlew assembleRelease`
+5. Install `adb install ./app/build/outputs/apk/release/app-release.apk`
 
 # Getting Started
 

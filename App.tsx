@@ -21,7 +21,7 @@ const App: React.FC = () => {
     return Math.floor(currentDateTime.valueOf() / 1000).toString(16);
   };
 
-  const qrPayload = JSON.stringify({"g":"44h8f52g4","t":"bvsyePMxMN/yNyTQdP6vpgkb/ZBVqxRUUH4CM9K7WSlPoMqYb36he5vlE1xkHU3anRyGbWR3G/TM37mnbv2srcaJcQwN0mNOA4s/" + getHexTimestamp()});
+  const qrPayload = JSON.stringify({"g":"44h8f52g3","s":"bvsyePMxMN/yNyTQdP6vpgkb/ZBVqxRUUH4CM9K7WSlPoMqYb36he5vlE1xkHU3anRyGbWR3G/TM37mnbv2srcaJcQwN0mNOA4s/nGqTtn/" + getHexTimestamp()});
   const expirationTime = getExpirationTime();
 
   return (
