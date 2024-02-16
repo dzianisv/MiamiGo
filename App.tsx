@@ -13,9 +13,16 @@ const App: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const getExpirationTime = () => {
+    return moment().add(2, 'h').second(15).minute(18);
+  }
+
   const getHexTimestamp = (): string => {
     return Math.floor(currentDateTime.valueOf() / 1000).toString(16);
   };
+
+  const qrPayload = JSON.stringify({"g":"44h8f52g4","t":"bvsyePMxMN/yNyTQdP6vpgkb/ZBVqxRUUH4CM9K7WSlPoMqYb36he5vlE1xkHU3anRyGbWR3G/TM37mnbv2srcaJcQwN0mNOA4s/" + getHexTimestamp()});
+  const expirationTime = getExpirationTime();
 
   return (
     <SafeAreaView style={styles.container}>
@@ -28,14 +35,14 @@ const App: React.FC = () => {
       </View>
       {/* <Text style={styles.scanText}>Scan this code to ride</Text> */}
       <View style={styles.qrCodeContainer}>
-        <QRCode value={getHexTimestamp()} size={200} />
+        <QRCode value={qrPayload} size={100} />
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.dateText}>{currentDateTime.format('dddd').toUpperCase()} {currentDateTime.format('DD')}</Text>
         <Text style={styles.timeText}>CURRENT TIME</Text>
         <Text style={styles.timeText}>{currentDateTime.format('LTS')}</Text>
         <Text style={styles.expiresText}>Expires {currentDateTime.format('M/D/YYYY')}</Text>
-        <Text style={styles.expiresTimeText}>{moment('2024-02-15T13:53:20').format('LTS')}</Text>
+        <Text style={styles.expiresTimeText}>{expirationTime.format('LTS')}</Text>
       </View>
     </SafeAreaView>
   );
