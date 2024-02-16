@@ -39,10 +39,16 @@ const App: React.FC = () => {
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.dateText}>{currentDateTime.format('dddd').toUpperCase()} {currentDateTime.format('DD')}</Text>
-        <Text style={styles.timeText}>CURRENT TIME</Text>
-        <Text style={styles.timeText}>{currentDateTime.format('LTS')}</Text>
-        <Text style={styles.expiresText}>Expires {currentDateTime.format('M/D/YYYY')}</Text>
-        <Text style={styles.expiresTimeText}>{expirationTime.format('LTS')}</Text>
+
+        <View style={styles.textGroup}>
+          <Text style={styles.timeText}>CURRENT TIME</Text>
+          <Text style={styles.timeText}>{currentDateTime.format('LTS')}</Text>
+        </View>
+        
+        <View style={styles.textGroup}>
+          <Text style={styles.expiresText}>Expires {currentDateTime.format('M/D/YYYY')}</Text>
+          <Text style={styles.expiresTimeText}>{expirationTime.format('LTS')}</Text>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -86,7 +92,6 @@ const styles = StyleSheet.create({
   },
   expiresText: {
     fontSize: 16,
-    marginTop: 10,
     fontWeight: 'bold',
     color: 'rgb(0, 0, 0)',
   },
@@ -94,6 +99,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: 'rgb(0, 0, 0)',
+  },
+  textGroup: {
+    marginTop: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   grayBar: {
     position: 'absolute',

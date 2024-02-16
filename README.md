@@ -7,7 +7,8 @@ export PATH="/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:$PA
 export ANDROID_HOME=~/Library/Android/sdk/
 export ANDROID_SDK=~/Library/Android/sdk/
 ```
-3. `yarn android`
+3. Develop/debug `yarn android`
+4. Build `cd android`, ` ./gradlew assembleDebug` or `./gradlew assembleRelease`
 
 # Getting Started
 
