@@ -1,4 +1,13 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# How to build
+
+1. Install android-studio
+2. ```
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home/"
+export PATH="/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin:$PATH"
+export ANDROID_HOME=~/Library/Android/sdk/
+export ANDROID_SDK=~/Library/Android/sdk/
+```
+3. `yarn android`
 
 # Getting Started
 
