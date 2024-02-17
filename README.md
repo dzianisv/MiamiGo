@@ -2,6 +2,8 @@
 My frist ReactNative app that I build to learn how ReactNative works. 
 I was in Miami that time and looked at the glitchy Miami Go app and asked myself, how hard to build app like that for a public transit.
 
+**Disclaimer**: do not use this as a ticket, QR code content is invalid. This is just for a demo purposes.
+
 ![](assets/Logo.jpg)
 
 # How to build
