@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     marginBottom: 10,
-    width: "60%",
+    width: "55%",
   },
   logo: {
     width: "100%",
