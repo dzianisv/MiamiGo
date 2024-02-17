@@ -21,7 +21,7 @@ export ANDROID_SDK=~/Library/Android/sdk/
 4. Build `cd android; ./gradlew assembleRelease`
 5. Install `adb install ./app/build/outputs/apk/release/app-release.apk`
 
-# Getting Started
+## Developing
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
