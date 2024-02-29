@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   logoContainer: {
-    marginTop: "10%",
+    marginTop: "20%",
     width: "55%",
   },
   logo: {
