@@ -8,6 +8,7 @@ I was in Miami that time and looked at the glitchy Miami Go app and asked myself
 
 # How to build
 
+### android
 1. Install android-studio
 2. Export environment
 ```shell
@@ -20,6 +21,11 @@ export ANDROID_SDK=~/Library/Android/sdk/
 3. Develop/debug `yarn android`
 4. Build `cd android; ./gradlew assembleRelease`
 5. Install `adb install ./app/build/outputs/apk/release/app-release.apk`
+
+### ios
+
+Go to `open ios/*.xcodeproj`
+
 
 ## Developing
 

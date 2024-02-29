@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, StyleSheet, Text, View, Image } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
+import {QRCodeSVG} from 'qrcode.react';
+
 import moment from 'moment';
 
 const App: React.FC = () => {
@@ -31,11 +33,13 @@ const App: React.FC = () => {
         <Text style={styles.grayBarText}>One Way Pass - Pass will be activated at the time of purchase and will expire within 3 hours</Text>
       </View>
       <View style={styles.logoContainer}>
-        <Image source={require('./assets/Logo.jpg')} style={styles.logo} />
+        {/* <Image source={require('./assets/Logo.jpg')} style={styles.logo} /> */}
+        <img src={require('./assets/Logo.jpg')} style={styles.logo} />
       </View>
       {/* <Text style={styles.scanText}>Scan this code to ride</Text> */}
       <View style={styles.qrCodeContainer}>
-        <QRCode value={qrPayload} size={100} />
+        {/* <QRCode value={qrPayload} size={100} /> */}
+         <QRCodeSVG value={qrPayload} size={100} />
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.dateText}>{currentDateTime.format('dddd').toUpperCase()} {currentDateTime.format('DD')}</Text>
@@ -62,10 +66,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   qrCodeContainer: {
+    marginTop: "5%",
     marginBottom: 20,
   },
   logoContainer: {
-    marginBottom: 10,
+    marginTop: "10%",
     width: "55%",
   },
   logo: {
