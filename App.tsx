@@ -65,17 +65,41 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#FFF',
   },
-  qrCodeContainer: {
-    marginTop: "5%",
-    marginBottom: 20,
+  grayBar: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: 'rgb(60,68,76)',
+    padding: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+  arrowText: {
+    fontFamily: 'monospace',
+    color: 'rgb(246, 251, 252)',
+    paddingRight: 10,
+  },
+  grayBarText: {
+    fontFamily: 'monospace',
+    fontWeight: 'bold',
+    color: 'rgb(246, 251, 252)',
+    flex: 1,
+    textAlign: 'left',
+  },
+
   logoContainer: {
-    marginTop: "20%",
+    marginTop: "25%",
     width: "55%",
   },
   logo: {
     width: "100%",
     resizeMode: 'contain',
+  },
+  qrCodeContainer: {
+    marginTop: "5%",
+    marginBottom: 20,
   },
   scanText: {
     fontFamily: 'monospace',
@@ -109,29 +133,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  grayBar: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'rgb(60,68,76)',
-    padding: 15,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  arrowText: {
-    fontFamily: 'monospace',
-    color: 'rgb(246, 251, 252)',
-    paddingRight: 10,
-  },
-  grayBarText: {
-    fontFamily: 'monospace',
-    fontWeight: 'bold',
-    color: 'rgb(246, 251, 252)',
-    flex: 1,
-    textAlign: 'left',
   },
 });
 
